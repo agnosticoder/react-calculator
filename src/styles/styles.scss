@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$primary: #FFD166;
+$secondary: #06D6A0;
+$tertiary: #118AB2;
+$forth: #073B4C;
+$fifth: #EF476F;
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Roboto";
+    background-color: lighten($primary, 5%);
+    font-size: 1.6rem;
+}
+
+.heading{
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+.margin-bottom-2{
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-3{
+    margin-bottom: 3rem;
+}
+
+.margin-bottom-5{
+    margin-bottom: 5rem;
+}
+
+.margin-top-2{
+    margin-top: 2rem;
+}
+
+.wrapper{
+    width: 100%;
+    height: 70rem;
+    margin: 0 auto;
+}
+
+.eval-display{
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    height: 9rem;
+    color: $forth;
+    background-color: $secondary;
+    border: 1px solid darken($forth, 10%);
+    border-radius: 1rem;
+}
+
+
+.eval-display-answer{
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    height: 9rem;
+    color: lighten($forth, 20%);
+    background-color: $secondary;
+    border: 1px solid darken($forth, 10%);
+    border-radius: 1rem;
+    transition: all 1s ease;
+}
+
+.eval-display-answer-after-click{
+    font-size: 3.2rem;
+    color: $forth;
+    background-color: $secondary;
+    transition: all .4s ease;
+    word-break: break-word;
+   
+}
+
+
+
+.grid-container{
+    box-sizing: border-box;
+    max-width: 40rem;
+    height: 32rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: $tertiary;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+    // gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+
+
+.grid-item-equal{
+    font-size: 3rem;
+    grid-column: 4/6;
+    border-radius: 2rem;
+    width: 10rem;
+    background-color: $fifth;
+    color: $forth;
+}
+
+.btn{
+    border: 0;
+    outline: none;
+    outline-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    background-color: $forth;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.btn-equal{
+    border: 0;
+    outline: none;
+    outline-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 2rem;
+    width: 10rem;
+    background-color: $primary;
+    color: $forth;
+}
+
