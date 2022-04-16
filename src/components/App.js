@@ -7,7 +7,7 @@ const App = () => {
     const [equalClass, setEqualClass] = useState("")
 
     const handleCalculation = (e) => {
-        if (e.target.innerText.match(/^[0-9,+,\-,*,\/]{1,}$/g)) {
+        if (e.target.innerText.match(/^[0-9,+,\-,*,\/,.]{1,}$/g)) {
             setCurrentNumber(prevNumber => (
                 prevNumber + e.target.innerText
             ));
